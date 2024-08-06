@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/style.css"/>
+    <title>Task</title>
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="header_top">
+            <div class="header_container header">
+                <button data-btn="nav_btn" class="nav_btn">
+                    <span></span>
+                </button>
+                <div class="header_left">
+                    <nav data-block="nav_block" class="nav_block nav">
+                        <ul class="nav_items">
+                            <li class="nav_item">
+                                <a class="nav_link" href="#">Needs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="#">Price List</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="#">
+                                    Treatments
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.99999 5.66537C3.89246 5.66537 3.78494 5.62535 3.70295 5.54549L1.12308 3.0311C0.958972 2.87115 0.958972 2.61182 1.12309 2.45194C1.28713 2.29206 1.55316 2.29206 1.71729 2.45194L3.99999 4.67681L6.28271 2.45202C6.44682 2.29214 6.71282 2.29214 6.87685 2.45202C7.04105 2.6119 7.04105 2.87123 6.87685 3.03117L4.29702 5.54556C4.215 5.62544 4.10748 5.66537 3.99999 5.66537Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="#">Surgical</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="#">Dental</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="logo">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <a class="phone" href="tel:+374 44 007171">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="3" width="12" height="18" rx="2" stroke="white" stroke-width="1.2"/>
+                        <path d="M9 3V3C9 3.46499 9 3.69748 9.05111 3.88823C9.18981 4.40587 9.59413 4.81019 10.1118 4.94889C10.3025 5 10.535 5 11 5H13C13.465 5 13.6975 5 13.8882 4.94889C14.4059 4.81019 14.8102 4.40587 14.9489 3.88823C15 3.69748 15 3.46499 15 3V3"
+                              stroke="white" stroke-width="1.2"/>
+                        <circle cx="12" cy="18" r="1" fill="white"/>
+                    </svg>
+                    +374 44 007171
+                </a>
+
+               <div class="buttons">
+                   <button class="book_now">Book Now</button>
+
+                   <button data-btn="search_btn" class="search_btn">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"/>
+                           <path d="M20 20L17 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                   </button>
+               </div>
+            </div>
+        </div>
+        <div class="header_bottom" data-block="header_bottom">
+            <div class="header_container">
+                <h2>Choose Your Appointment</h2>
+
+                <label>
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.6104" cy="11" r="6" stroke="#010114" stroke-width="1.2"/>
+                        <path d="M20.6104 20L17.6104 17" stroke="#010114" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" placeholder="Search..." name="search">
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="category_container main">
+            <h1 class="title">Schedule an Appointment</h1>
+            <div class="main-category-block ">
+                <div class="category-lists">
+                    <ul class="active">
+                        <li class="category-btn"
+                            data-sub="[{'Injection': [{'Dermal Filler Injections': [{'name': 'Face Fillers', 'id': 286}, {'name': 'Filler Dissolving', 'id': 317}, {'name': 'Body Fillers', 'id': 58}]}, {'Botulinum Toxin': [{'name': 'Botox for face', 'id': 241}, {'name': 'Sweat Reduction', 'id': 158}]}, {'Mesotherapy': [{'name': 'Mesotherapy', 'id': 246}, {'name': 'Mesobotox', 'id': 244}, {'name': 'Cherry Lips', 'id': 323}, {'name': 'Skinboosters', 'id': 245}]}, {'PRP': [{'name': 'Hair PRP', 'id': 367}, {'name': 'Face &amp; Neck PRP', 'id': 368}]}, {'name': 'Fat Burner injection', 'id': 124}]}, {'Devices': [{'name': 'Genius RF Microneedling', 'id': 373}, {'name': 'Hollywood Spectra', 'id': 329}, {'name': 'Sofwave', 'id': 6}]}, {'Skin treatment': [{'name': 'Acne', 'id': 185}, {'name': 'Pigmentation treatment', 'id': 371}, {'name': 'Cellulite', 'id': 175}, {'name': 'Tattoo removal', 'id': 140}, {'name': 'Stretch marks removal', 'id': 141}]}, {'name': 'IV Drips', 'id': 18}, {'name': 'Doctor Consultation', 'id': 365}]"
+                            data-name="Aesthetic &amp; Anti-aging">
+                            Aesthetic &amp; Anti-aging
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L0.999999 1" stroke="#010114" stroke-width="2"/>
+                            </svg>
+                        </li>
+                        <li class="category-btn"
+                            data-sub="[{'Laser Hair Removal': [{'name': 'Men', 'id': 336}, {'name': 'Women', 'id': 337}]}, {'Skin treatment': [{'Skin Care &amp; Facial': [{'name': 'Mirapeel Hydrating Facial', 'id': 277}, {'name': 'Dermapen Microneedling', 'id': 369}]}, {'Peeling': [{'name': 'Pigmentation', 'id': 370}, {'name': 'Hollywood (Carbon) Peel', 'id': 208}]}, {'Devices': [{'name': 'Clarity 2', 'id': 372}, {'name': 'Hollywood Spectra', 'id': 374}, {'name': 'Sofwave', 'id': 375}, {'name': 'Genius RF Microneedling', 'id': 7}]}]}, {'PRP': [{'name': 'PRP Face &amp; Neck', 'id': 326}, {'name': 'PRP Hair', 'id': 67}]}, {'name': 'Hardware Cosmetology Consultation', 'id': 366}]"
+                            data-name="Hardware Cosmetology">
+                            Hardware Cosmetology
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L0.999999 1" stroke="#010114" stroke-width="2"/>
+                            </svg>
+                        </li>
+                        <li class="category-btn"
+                            data-sub="[{'Facial Surgery Consultations': [{'name': 'Face Lift', 'id': 191}, {'name': 'Eyelid and Peri-Orbital Surgery', 'id': 347}, {'name': 'Nose Surgery (Rhinoplasty)', 'id': 224}, {'name': 'Ear surgery (Otoplasty)', 'id': 216}]}, {'Body Surgery Consultation': [{'name': 'MIA procedure for Breast', 'id': 255}, {'name': 'Body Contouring Consultation', 'id': 350}, {'name': 'Liposuction', 'id': 35}, {'name': 'Mommy Makeover Consultation', 'id': 237}, {'name': 'Breast Surgery Consultation', 'id': 234}]}, {'Skin - Dermatology Surgery': [{'name': 'Lipoma Surgery', 'id': 355}, {'name': 'Cyst Removal', 'id': 164}, {'name': 'Mole Removal', 'id': 165}]}, {'name': 'Post-Op Consultation', 'id': 345}]"
+                            data-name="Plastic Surgery">
+                            Plastic Surgery
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L0.999999 1" stroke="#010114" stroke-width="2"/>
+                            </svg>
+                        </li>
+                        <li class="category-btn"
+                            data-sub="[{'Aesthetic Dental treatments': [{'name': 'Aligners', 'id': 360}, {'name': 'Whitening', 'id': 359}, {'name': 'Veneers', 'id': 361}, {'name': 'Cleansing &amp; polishing', 'id': 358}]}, {'name': 'CBCT Scan (Cone Beam CT)', 'id': 309}, {'name': 'Dental Consultation', 'id': 356}, {'name': 'Holistic Dentistry Consutlation', 'id': 357}]"
+                            data-name="Dental">
+                            Dental
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L0.999999 1" stroke="#010114" stroke-width="2"/>
+                            </svg>
+                        </li>
+                        <li class="category-btn" data-sub="[{'name': 'Doctor Consultation', 'id': 64}]"
+                            data-name="Hair Transplant">
+                            Hair Transplant
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L0.999999 1" stroke="#010114" stroke-width="2"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div id="category-image">
+                    <img src="images/block_img.png" loading="lazy" alt="img"/>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

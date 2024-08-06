@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'MyFont'; /* Название вашего шрифта */
+    src: url('../fonts/poppins/Poppins-Regular.woff') format('truetype'); /* Путь к файлу обычного начертания шрифта */
+    font-weight: normal; /* Обычное начертание шрифта */
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/poppins/Poppins-Bold.woff') format('truetype'); /* Путь к файлу жирного начертания шрифта */
+    font-weight: bold; /* Жирное начертание шрифта */
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/poppins/Poppins-Medium.woff') format('truetype'); /* Путь к файлу полужирного начертания шрифта */
+    font-weight: 500; /* Полужирное начертание шрифта (обычно используется значение 600 для полужирного) */
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/poppins/Poppins-SemiBold.woff') format('truetype'); /* Путь к файлу полужирного начертания шрифта */
+    font-weight: 600; /* Полужирное начертание шрифта (обычно используется значение 600 для полужирного) */
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+select,
+input,
+textarea {
+    resize: none;
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+body {
+    font-family: MyFont, sans-serif;
+    transition: all 0.3s ease;
+}
+
+#app {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+/*_container*/
+[class*="_container"] {
+    max-width: 1175px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
